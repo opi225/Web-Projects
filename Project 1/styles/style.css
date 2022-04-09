@@ -1,0 +1,62 @@
+@font-face{
+    font-family:"Arial Narrow 7";
+    src: url(ArialNarrow7-JB8E.ttf);
+
+}
+
+canvas{ border: 1px solid black; }
+
+body{
+    background-color: blanchedalmond;
+}
+
+h1{
+    text-align: center;
+    font-family: "Arial Narrow 7";
+}
+
+h2{
+    font-family: "Arial Narrow 7";
+}
+
+h3{
+    text-align: center;
+    font-family: "Arial Narrow 7";
+}
+
+h4{
+    text-align: center;
+    font-family: "Arial Narrow 7";
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#canvasSpace{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#area1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#area2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p#instruct{
+    width: 75%;
+}
+
