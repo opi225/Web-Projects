@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Hospital Map Search</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@latest/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    <link href='styles/default-styles.css' rel='stylesheet' />
+    <script src="./src/loader.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <section id='map'></section>
+        <section id="controls">
+            <h1>Search for hospitals in america based on their state, whether they are open or closed, and whether they have a helipad!</h1>
+            <p id="loading"></p>
+            <hr>
+            <p>Search by 2 letter state abbreviation.</p>
+            <input type="text" id="search">
+            <p>Open or Closed Hospitals?</p>
+            <input type="radio" id="all" name="status" value="" checked>
+            <label for="all">All</label>
+            <input type="radio" id="open" name="status" value="OPEN">
+            <label for="open">Open</label>
+            <input type="radio" id="closed" name="status" value="CLOSED">
+            <label for="closed">Closed</label><br>
+            <input type="checkbox" id="helipad" value="Y">
+            <label for="helipad">Does it have a Helipad?</label>
+            <button id="sBtn">Search for Hospitals!</button>
+            <button id="rBtn">Reset App</button>
+            <footer>
+                <p>Created by Daniel Mannion</p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
