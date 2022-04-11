@@ -50,18 +50,18 @@ function compare(thing1, thing2){
 }
 
 //takes in all of the values to be compared, and sees if they are all equal. Returns a boolean depending on the result.
-function comparePhy(div1, div2, size1, size2, inc1, inc2, space1, space2){
-    let phy1 = [div1, size1, inc1, space1];
-    let phy2 = [div2, size2, inc2, space2];
+function comparePhy(div1, div2, size1, size2, inc1, inc2, space1, space2, color1, color2){
+    let phy1 = [div1, size1, inc1, space1, color1];
+    let phy2 = [div2, size2, inc2, space2, color2];
     let matches = 0;
-    for(let i = 0; i < 4; i++)
+    for(let i = 0; i < 5; i++)
     {
         if(compare(phy1[i], phy2[i])){
             matches++;
         }
 
     }
-    if(matches == 4)
+    if(matches == 5)
     {
         return true;
     }

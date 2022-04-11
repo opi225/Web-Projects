@@ -24,7 +24,7 @@ let increment2 = 0;
 
 let color = utils.random(7);
 let colorNew = 1;
-let color2 = 0;
+let color2 = utils.random(7);
 
 let fps, fpsNew;
 
@@ -235,7 +235,7 @@ function restart2(){
 
 //updates the score depending on if the comparison is successful, and creates a new phyllotaxis on the second canvas if the comparison is successful.
 function restartGame(){
-    if(utils.comparePhy(divergence, divergence2, c, c2, increment, increment2, size, size2))
+    if(utils.comparePhy(divergence, divergence2, c, c2, increment, increment2, size, size2, color, color2))
     {
         correct++;
         document.querySelector("#correct").innerHTML = "Correct Matches: " + correct;
