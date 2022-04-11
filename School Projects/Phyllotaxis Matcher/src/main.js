@@ -217,16 +217,6 @@ function restart(){
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, 400, 300);
     ctx.restore();
-
-    document.querySelector("#seven").innerHTML = divergence;
-    document.querySelector("#eight").innerHTML = increment;
-    document.querySelector("#nine").innerHTML = c;
-    document.querySelector("#ten").innerHTML = size;
-
-    document.querySelector("#eleven").innerHTML = divergenceNew;
-    document.querySelector("#twelve").innerHTML = incrementNew;
-    document.querySelector("#thirteen").innerHTML = cNew;
-    document.querySelector("#fourteen").innerHTML = sizeNew;
 }
 
 //restarts the Phyllotaxis generation of the second canvas, and creates new variable to generate the phyllotaxis by
@@ -241,13 +231,6 @@ function restart2(){
     ctx2.fillStyle = 'black';
     ctx2.fillRect(0, 0, 400, 300);
     ctx2.restore();
-
-
-    document.querySelector("#one").innerHTML = divergence2;
-    document.querySelector("#two").innerHTML = increment2;
-    document.querySelector("#three").innerHTML = c2;
-    document.querySelector("#four").innerHTML = size2;
-    document.querySelector("#five").innerHTML = color2;
 }
 
 //updates the score depending on if the comparison is successful, and creates a new phyllotaxis on the second canvas if the comparison is successful.
